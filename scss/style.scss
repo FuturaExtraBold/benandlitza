@@ -1,0 +1,111 @@
+//////////////////////////////////////////////////
+//
+// Vendor
+//
+//////////////////////////////////////////////////
+@import "reset";
+
+
+//////////////////////////////////////////////////
+//
+// Variables
+//
+//////////////////////////////////////////////////
+$turquoise:                 #1ABC9C;
+$green-sea:                 #16A085;
+$emerald:                   #2ECC71;
+$nephritis:                 #27AE60;
+$peter-river:               #3498DB;
+$belize-hole:               #2980B9;
+$amethyst:                  #9B59B6;
+$wisteria:                  #8E44AD;
+$wet-asphalt:               #34495E;
+$midnight-blue:             #2C3E50;
+$sun-flower:                #F1C40F;
+$orange:                    #F39C12;
+$carrot:                    #E67E22;
+$pumpkin:                   #D35400;
+$alizarin:                  #E74C3C;
+$pomegranate:               #C0392B;
+$clouds:                    #ECF0F1;
+$silver:                    #BDC3C7;
+$concrete:                  #95A5A6;
+$asbestos:                  #7F8C8D;
+
+
+//////////////////////////////////////////////////
+//
+// Box Sizing, Grid
+//
+//////////////////////////////////////////////////
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+//@media (min-width: 30em) {
+  .row { width: 100%; display: table; table-layout: fixed; }
+  .col { display: table-cell; }
+  .vertical { vertical-align: middle; }
+//}
+
+
+//////////////////////////////////////////////////
+//
+// Styling
+//
+//////////////////////////////////////////////////
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: $clouds;
+}
+
+h1 {
+  font-family: 'Oleo Script', sans-serif;
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 20px;
+  color: $concrete;
+}
+
+p {
+  font-size: 20px;
+}
+
+.accent {
+  color: $amethyst;
+}
+
+.greeting {
+  position: absolute;
+  text-align: center;
+  height: 100%;
+  h1 { margin-bottom: 20px; }
+  h2 { margin-bottom: 6px; }
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("../img/photo.jpg") no-repeat top center;
+  background-size: cover;
+}
+
+.overlay {
+  opacity: 0.95;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: darken($midnight-blue, 10%);
+}
+
+.frame {
+  left: 20px; right: 20px; top: 20px; bottom: 20px;
+  position: absolute;
+  border: 10px solid rgba(255,255,255,0.05);
+  @media (max-width: 30em) { display: none; }
+}
