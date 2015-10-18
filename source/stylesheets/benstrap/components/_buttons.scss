@@ -1,0 +1,61 @@
+@mixin btn-styles($color) {
+  background-color: $color;
+  &:hover, &:focus, &:active {
+    background-color: darken($color, $button-hover-amount);
+  }
+  &[disabled] {
+    opacity: .5;
+    cursor: not-allowed;
+    &:hover, &:focus, &:active {
+      background-color: $color;
+    }
+  }
+  &.btn-outline {
+    background-color: transparent;
+    color: $color;
+    border-color: $color;
+    &:hover {
+      color: darken($color, $button-hover-amount);
+      border-color: darken($color, $button-hover-amount);
+    }
+  }
+  &.btn-link {
+    background-color: transparent;
+    color: $color;
+    &:hover {
+      color: darken($color, $button-hover-amount);
+      text-decoration: underline;
+    }
+  }
+}
+
+.btn {
+  font-size: $button-font-size;
+  font-weight: $button-font-weight;
+  color: $button-text-color;
+  border: 3px solid transparent;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+  display: inline-block;
+  box-shadow: $button-box-shadow;
+  border-radius: $button-border-radius;
+  text-decoration: none;
+  text-align: center;
+  transition: all .2s ease-in-out;
+
+  &--small {
+    padding: 5px 15px;
+    font-size: $button-font-size-small;
+  }
+  &--large {
+    padding: 15px 50px;
+    font-size: $button-font-size-large;
+  }
+
+  &--primary { @include btn-styles($color-primary); }
+
+  &--block {
+    display: block;
+    width: 100%;
+  }
+}

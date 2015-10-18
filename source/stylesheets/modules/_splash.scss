@@ -1,0 +1,20 @@
+.splash {
+  background-color: #222;
+  line-height: 1.1;
+  position: relative;
+  top: 0;
+  .fancy {
+    font-family: $font-accent;
+    color: $color-primary;
+  }
+  .img-splash {
+    top: 0;
+    background-image: url("../images/new_01.jpg");
+  }
+  .img-names {
+    position: relative;
+    width: 329px;
+    height: auto;
+    margin: 0 auto;
+  }
+}

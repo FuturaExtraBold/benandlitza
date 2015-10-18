@@ -1,0 +1,29 @@
+$footer-background: #37474F;
+$footer-padding: 200px;
+
+footer {
+  background-color: $footer-background;
+  padding: $footer-padding 0 40px;
+  position: relative;
+  [class^="col-"] {
+    text-align: center;
+  }
+  .shout-outs {
+    margin-top: 140px;
+    text-align: center;
+    opacity: .1;
+    font-family: $font-accent;
+  }
+}
+
+@media (max-width: $md-max) {
+  footer {
+    padding: 100px 0;
+    [class^="col-"] {
+      margin-bottom: 50px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
