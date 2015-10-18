@@ -1,0 +1,65 @@
+// Breakpoints
+$xs-max: 479px;
+$sm-min: $xs-max + 1;
+$sm-max: 767px;
+$md-min: $sm-max + 1;
+$md-max: 991px;
+$lg-min: $md-max + 1;
+$lg-max: 1199px;
+$xl-min: $lg-max + 1;
+
+// Grid System
+$container-gutter: 30px;
+$grid-gutter: 30px;
+
+// Standard Colors
+$color-primary: #546E7A;
+$color-light: #f4f4f4;
+$light-background: #f8f8f8;
+
+// Text Colors
+$text-light: #EEE;
+$text-default: #AAA;
+$text-dark: #222;
+
+// Typography
+$font-default: "Vollkorn", sans-serif;
+$font-accent: "Lato", serif;
+$heading-font-weight: 400;
+$display-font-weight: 700;
+$accent-font-weight: 700;
+$default-font-weight: 400;
+$lead-font-weight: 300;
+
+// Buttons
+$button-font-size: 1.6rem;
+$button-font-weight: 400;
+$button-box-shadow: none;
+$button-border-radius: 4px;
+$button-text-color: #FFF;
+$button-hover-amount: 15%;
+$button-font-size-small: 1.2rem;
+$button-font-size-large: 2.0rem;
+
+// Alerts
+$alert-background-lighten: 40%;
+$alert-border-width: 2px;
+$alert-border-color-lighten: 36%;
+$alert-text-darken: 10%;
+$alert-padding: 20px;
+$alert-border-radius: 4px;
+
+// Cards
+$card-background: #FFF;
+$card-padding: 20px;
+$card-box-shadow: 0 2px 6px rgba(0,0,0,.25);
+$card-border-radius: 6px;
+$card-border: 0;
+
+// Media Object
+$media-gutter: 20px;
+$media-nested-margin-top: 30px;
+
+// Tables
+$table-border-width: 1px;
+$table-border-color: $color-light;
