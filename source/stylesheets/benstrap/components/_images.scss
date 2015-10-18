@@ -20,10 +20,6 @@
     background-position: center top;
   }
 }
-.img-cover.no-content {
-  height: 800px;
-  position: relative;
-}
 
 // SVG Image
 .img-svg {
@@ -31,7 +27,23 @@
   height: 100px;
   margin-bottom: 30px;
   * {
-    stroke: #FFF;
+    stroke: $text-light;
     fill: transparent;
+  }
+}
+.img-svg.dark {
+  * {
+    stroke: $text-default;
+  }
+}
+
+// Interstitial
+.interstitial {
+  position: relative;
+  height: 800px;
+}
+@media (max-width: $sm-max) {
+  .interstitial {
+    height: 400px;
   }
 }

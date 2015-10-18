@@ -1,18 +1,17 @@
-$avatar-size: 80px;
+$avatar-size: 100px;
 .bridal-party {
   background-color: $color-light;
   .party-grid {
-    margin-top: 40px;
+    margin-top: 60px;
   }
   .party-member {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   .avatar {
-    width: $avatar-size;
-    height: $avatar-size;
+    width: 150px;
     background-color: #CCC;
-    margin: 0 auto 20px;
     border-radius: 50%;
     position: relative;
+    margin: 0 auto 30px;
   }
 }

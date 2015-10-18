@@ -7,10 +7,36 @@ hr {
   border-top: 1px solid $color-light;
 }
 
+section {
+  position: relative;
+  padding: 150px 0;
+}
+
+@media (max-width: $sm-max) {
+  section {
+    padding: 60px 0;
+  }
+}
+
 .color-overlay {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.6);
+}
+
+.fancy-line {
+  width: 200px;
+  height: 2px;
+  background-color: $text-light;
+  margin: 30px auto 50px;
+}
+.fancy-line.dark {
+  background-color: $text-default;
+}
+@media (max-width: $sm-max) {
+  .fancy-line {
+    margin: 20px auto 30px;
+  }
 }
