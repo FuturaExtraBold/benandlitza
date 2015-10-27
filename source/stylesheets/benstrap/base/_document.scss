@@ -1,6 +1,13 @@
 html { box-sizing: border-box; }
 *, *:before, *:after { box-sizing: inherit; }
 
+body {
+  background-color: #FFF;
+}
+body.thanks {
+  background-color: $color-light;
+}
+
 hr {
   margin: 30px 0;
   border: 0;
