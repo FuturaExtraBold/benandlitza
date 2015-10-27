@@ -3,20 +3,43 @@
     <h1 class="font-accent text-light">RSVP</h1>
     <div class="fancy-line"></div>
     <h2 class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</h2>
-    <form class="rsvp-form">
+    <form class="rsvp-form" accept-charset="UTF-8" action="https://formkeep.com/f/c3da34a893d2" method="POST">
+      <input type="hidden" name="utf8" value="✓">
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" id="name">
+        <input type="text" id="name" name="name">
       </div>
       <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" id="email">
+        <input type="email" id="email" name="email">
+      </div>
+      <div class="grid">
+        <div class="col-md-1-2">
+          <div class="form-group">
+            <input type="radio" id="rsvp-yes" name="rsvp" value="Yes" checked="checked">
+            <label for="rsvp-yes" class="selection">
+              <i class="icon-no fa fa-circle-o"></i>
+              <i class="icon-yes fa fa-check-circle-o"></i>
+              &nbsp;&nbsp;Yes, we'll be there!
+            </label>
+          </div>
+        </div>
+        <div class="col-md-1-2">
+          <div class="form-group">
+            <input type="radio" id="rsvp-no" name="rsvp" value="No">
+            <label for="rsvp-no" class="selection">
+              <i class="icon-no fa fa-circle-o"></i>
+              <i class="icon-yes fa fa-check-circle-o"></i>
+              &nbsp;&nbsp;Sorry, we can't attend.
+            </label>
+          </div>
+        </div>
       </div>
       <div class="form-group">
         <label for="message">Message</label>
-        <textarea id="message"></textarea>
+        <textarea id="message" name="message"></textarea>
       </div>
-      <button class="btn btn--primary btn-submit" type="submit" value="Submit">Submit</button>
+      <button class="btn btn--primary btn-submit" type="submit">Submit</button>
     </form>
   </div>
 </section>
