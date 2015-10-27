@@ -30,6 +30,7 @@
 }
 
 .btn {
+  font-family: $font-accent;
   font-size: $button-font-size;
   font-weight: $button-font-weight;
   color: $button-text-color;
@@ -54,6 +55,7 @@
   }
 
   &--primary { @include btn-styles($color-primary); }
+  &--success { @include btn-styles($color-success); }
 
   &--block {
     display: block;
