@@ -6,6 +6,7 @@
     <title>Ben & Litza | March 11, 2016</title>
     <link rel="icon" href="favicon.ico?v=2" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700,400italic,700italic|Lato:300,400,600,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link href="/stylesheets/all.css" rel="stylesheet" />
   </head>
@@ -22,7 +23,7 @@
   <div class="container">
     <h1 class="font-accent text-light">Our Story</h1>
     <div class="fancy-line"></div>
-    <h2 class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
+    <h2 class="text-light">We got engaged at a charming little fountain hidden away in New Orleans Square at Disneyland, that has now been converted into an entrance lobby for the elite Club 33. We're lucky to have each other and even more lucky to have the love and support of our family and friends.</h2>
   </div>
 </section>
 
@@ -51,21 +52,44 @@
   <div class="container">
     <h1 class="font-accent text-light">RSVP</h1>
     <div class="fancy-line"></div>
-    <h2 class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</h2>
-    <form class="rsvp-form">
+    <h2 class="text-light">We'd love to have you join us! If for any reason you aren't able to make it, you've made us really sad. Kidding, but we will miss you! Please let us know either way!</h2>
+    <form class="rsvp-form" accept-charset="UTF-8" action="https://formkeep.com/f/c3da34a893d2" method="POST">
+      <input type="hidden" name="utf8" value="✓">
       <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name">
+        <label for="name">Name*</label>
+        <input type="text" id="name" name="name">
       </div>
       <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email">
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div class="grid">
+        <div class="col-md-1-2">
+          <div class="form-group">
+            <input type="radio" id="rsvp-yes" name="rsvp" value="Yes" checked="checked">
+            <label for="rsvp-yes" class="selection">
+              <i class="icon-no fa fa-circle-o"></i>
+              <i class="icon-yes fa fa-check-circle-o"></i>
+              &nbsp;&nbsp;Yes, we'll be there!
+            </label>
+          </div>
+        </div>
+        <div class="col-md-1-2">
+          <div class="form-group">
+            <input type="radio" id="rsvp-no" name="rsvp" value="No">
+            <label for="rsvp-no" class="selection">
+              <i class="icon-no fa fa-circle-o"></i>
+              <i class="icon-yes fa fa-check-circle-o"></i>
+              &nbsp;&nbsp;Sorry, we can't attend.
+            </label>
+          </div>
+        </div>
       </div>
       <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message"></textarea>
+        <label for="message">Send us a message here:</label>
+        <textarea id="message" name="message" placeholder=""></textarea>
       </div>
-      <button class="btn btn--primary btn-submit" type="submit" value="Submit">Submit</button>
+      <button class="btn btn--primary btn-submit" type="submit">Submit</button>
     </form>
   </div>
 </section>
@@ -125,19 +149,12 @@
   </div>
 </section>
 
-<section class="nearby text-center">
-  <div class="container">
-    <h1 class="font-accent text-light">Hotels and Activities</h1>
-    <div class="fancy-line"></div>
-    <h2 class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
-  </div>
-</section>
-
 <section class="honeymoon text-center">
   <div class="container">
-    <h1 class="font-accent">Honeymoon</h1>
-    <div class="fancy-line dark"></div>
-    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
+    <h1 class="font-accent text-light">Honeymoon</h1>
+    <div class="fancy-line"></div>
+    <h2 class="text-light">In lieu of a registry of gifts, we have set up an account to save up for a honeymoon. We have always dreamed of visiting the romantic cities of Paris and Rome and would be so grateful for your help getting there!</h2>
+    <a class="btn btn--success btn--large btn-donate" href="http://cash.me/benandlitza" target="_blank">Honeymoon Fund</a>
   </div>
 </section>
 
@@ -166,7 +183,7 @@
         <h2 class="font-accent text-light">Rules</h2>
         <h3>No Children Under 15</h3>
         <h3>No Outside Food/Drink</h3>
-        <h3>Smoke Where Allowed</h3>
+        <h3>Cocktail Attire</h3>
       </div>
     </div>
     <h4 class="shout-outs hidden-xs hidden-sm hidden-md">Code: Ben | Lettering: Litza | Photos: Dave</h4>
