@@ -15,3 +15,6 @@ gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 
 # Deploy to github pages
 gem 'middleman-gh-pages'
+
+# Optimize images
+gem 'middleman-imageoptim'

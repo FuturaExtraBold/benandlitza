@@ -29,6 +29,15 @@
   }
 }
 
+button {
+  cursor: pointer;
+}
+button:hover,
+button:focus {
+  cursor: pointer;
+  outline: none;
+}
+
 .btn {
   font-family: $font-accent;
   font-size: $button-font-size;

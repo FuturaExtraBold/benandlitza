@@ -72,6 +72,11 @@ code {
   font-size: 1.6rem;
 }
 
+a:hover,
+a:focus {
+  outline: none;
+}
+
 .text-light   { color: $text-light !important; }
 .text-default { color: $text-default !important; }
 .text-dark    { color: $text-dark !important; }
