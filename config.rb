@@ -62,6 +62,9 @@ configure :build do
   # Optimize images
   activate :imageoptim
 
+  # gzip
+  activate :gzip
+
   # Enable cache buster
   # activate :asset_hash
 
